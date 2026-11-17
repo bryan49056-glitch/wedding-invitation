@@ -307,30 +307,6 @@ img.site-logo {
   margin: 0 auto;
 }
 
-
-/* ဖုန်းစခရင်များအတွက် Tap Zones များကို CSS တွင် တိုက်ရိုက်ထည့်သွင်းခြင်း */
-@media screen and (max-width: 768px) {
-  .book-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-  }
-  .mobile-tap-left, .mobile-tap-right {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 50%;
-    z-index: 9999;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .mobile-tap-left { left: 0; }
-  .mobile-tap-right { right: 0; }
-}
-
 .page {
   position: absolute;
   top: 0;
