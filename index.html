@@ -8,22 +8,17 @@
   <link rel="stylesheet" href="css/ress.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
 <!-- Intro Video Overlay Screen -->
 <div id="intro-screen" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 99999; background: #0A2F1D; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-    
     <video id="intro-vid" src="images/opening.mp4" autoplay muted playsinline style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" onclick="enterWebsite()"></video>
-    
-    
 </div>
 
 <script>
@@ -36,7 +31,6 @@
             document.body.style.overflow = 'auto'; 
         }, 600);
     }
-
     document.body.style.overflow = 'hidden';
 </script>
 
@@ -49,23 +43,20 @@
   </header>
 
   <!-- Navigation Menu Bar -->
-<nav class="wedding-nav">
-    <a href="#home">Home</a>
-    <a href="#invitation">Invitation</a>
-    <a href="#information">Information</a>
-    <a href="#rsvp">RSVP</a>
-    <a href="#gallery">Gallery</a>
-    
-</nav>
+  <nav class="wedding-nav">
+      <a href="#home">Home</a>
+      <a href="#invitation">Invitation</a>
+      <a href="#information">Information</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#gallery">Gallery</a>
+  </nav>
 
-
-    <div class="audio-player-box" style="background-color: #550000; padding: 15px; border-radius: 10px;">
-      <p class="audio-title">Feel the rhythm of our love</p>
-      <audio controls loop>
-        <source src="./audio/piano.mp3" type="audio/mpeg">
-      </audio>
-    </div>
-
+  <div class="audio-player-box" style="background-color: #550000; padding: 15px; border-radius: 10px;">
+    <p class="audio-title">Feel the rhythm of our love</p>
+    <audio controls loop>
+      <source src="./audio/piano.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
   <div class="main-visual">
     <div class="slider-container" data-aos="fade-up">
@@ -82,239 +73,234 @@
 
   <article class="article-top">
     <section class="section-top" data-aos="fade-up">
-      <h1>Monday,21st December 2026</h1>
-      <p>Ceremon Venue </p>
+      <h1>Monday, 21st December 2026</h1>
+      <p>Ceremon Venue</p>
       <p>Corner of 53rd & 32nd St, Mandalay</p>
 
       <div id="countdown" class="countdown-timer" data-aos="fade-up">
-    <span id="days">0</span> days
-    <span id="hours">0</span> hrs
-    <span id="mins">0</span> mins
-    <span id="secs">0</span> secs
-  </div>
+        <span id="days">0</span> days
+        <span id="hours">0</span> hrs
+        <span id="mins">0</span> mins
+        <span id="secs">0</span> secs
+      </div>
 
-  <p class="invitation-text" data-aos="fade-up">
-    We're absolutely thrilled to celebrate our big day with you in Ceremon. Help us capture every moment with Joy.
-  </p>
+      <p class="invitation-text" data-aos="fade-up">
+        We're absolutely thrilled to celebrate our big day with you in Ceremon. Help us capture every moment with Joy.
+      </p>
     </section>
-
-    
-
   </article>
 
   <section id="invitation" class="content-section">
     <div class="invitation-box" data-aos="fade-up">
-   <div class="invitation-content-img">
-    <img src="images/invitationletter.png" alt="စုလျားရစ်ပတ်ဘိသိတ်မင်္ဂလာဖိတ်ကြားလွှာ" class="invite-img">
-   </div>
+      <div class="invitation-content-img">
+        <img src="images/invitationletter.png" alt="စုလျားရစ်ပတ်ဘိသိတ်မင်္ဂလာဖိတ်ကြားလွှာ" class="invite-img">
+      </div>
     </div>
   </section>
 
   <section id="information" class="content-section">
     <div class="information-box" data-aos="fade-up">
-   <div class="information-content-img">
-    <img src="images/information.png" alt="မင်္ဂလာအစီစဉ်" class="info-img">
-   </div>
+      <div class="information-content-img">
+        <img src="images/information.png" alt="မင်္ဂလာအစီစဉ်" class="info-img">
+      </div>
     </div>
   </section>
 
-  
   <section id="rsvp" class="content-section" data-aos="fade-up">
-  <div class="rsvp-box">
-    <h2 class="rsvp-title">RSVP</h2>
-    <p class="rsvp-subtitle">မင်္ဂလာပွဲ တက်ရောက်နိုင်ခြင်း ရှိ/မရှိ အကြောင်းပြန်ပေးပါရန်</p>
-    
-    <form class="rsvp-form" id="rsvpForm">
-      <div class="form-group">
-        <label for="name">ဧည့်သည်အမည်</label>
-        <input type="text" id="name" placeholder="အမည် ထည့်ပါ" required>
-      </div>
+    <div class="rsvp-box">
+      <h2 class="rsvp-title">RSVP</h2>
+      <p class="rsvp-subtitle">မင်္ဂလာပွဲ တက်ရောက်နိုင်ခြင်း ရှိ/မရှိ အကြောင်းပြန်ပေးပါရန်</p>
+      
+      <form class="rsvp-form" id="rsvpForm">
+        <div class="form-group">
+          <label for="name">ဧည့်သည်အမည်</label>
+          <input type="text" id="name" placeholder="အမည် ထည့်ပါ" required>
+        </div>
 
-      <div class="form-group">
-        <label for="attending">တက်ရောက်နိုင်မှု</label>
-        <select id="attending" required>
-          <option value="yes">ဝမ်းမြောက်စွာ တက်ရောက်ပါမည်</option>
-          <option value="no">မတက်ရောက်နိုင်ပါသဖြင့် တောင်းပန်အပ်ပါသည်</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <label for="attending">တက်ရောက်နိုင်မှု</label>
+          <select id="attending" required>
+            <option value="yes">ဝမ်းမြောက်စွာ တက်ရောက်ပါမည်</option>
+            <option value="no">မတက်ရောက်နိုင်ပါသဖြင့် တောင်းပန်အပ်ပါသည်</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="guests">တက်ရောက်မည့် ဦးရေ</label>
-        <input type="number" id="guests" min="1" max="10" value="1">
-      </div>
+        <div class="form-group">
+          <label for="guests">တက်ရောက်မည့် ဦးရေ</label>
+          <input type="number" id="guests" min="1" max="10" value="1">
+        </div>
 
-      <button type="submit" class="submit-btn">အကြောင်းပြန်မည်</button>
-    </form>
-  </div>
-</section>
+        <button type="submit" class="submit-btn">အကြောင်းပြန်မည်</button>
+      </form>
+    </div>
+  </section>
 </div>
 
 <section id="gallery" class="gallery-section">
   <div class="gallery-box" data-aos="fade-up">
-<section class="book-gallery-section">
-  <h2 class="section-title">A PROMISE OF FOREVER</h2>
-  
-  <div class="book-wrapper">
-    <div class="book" id="weddingBook">
+    <section class="book-gallery-section">
+      <h2 class="section-title">A PROMISE OF FOREVER</h2>
       
-      <!-- စာအုပ်အဖုံး (Cover) -->
-      <div class="page cover-page" style="z-index: 13;">
-        <div class="front" style="position: relative; width: 100%; height: 100%;">
-          <div class="spine-shadow"></div>
-          <video src="images/bookcover.mp4" autoplay muted playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
-          <div class="cover-overlay-hint">
-            <p class="tap-hint">✨ Tap to Open ✨</p>
+      <div class="book-wrapper" style="position: relative;">
+        <!-- ဖုန်းစခရင်အတွက် နှိပ်၍ လှန်ရန် Tap Zones များ အသေအချာ ထည့်သွင်းထားပါသည် -->
+        <div class="mobile-tap-left" id="phonePrev"></div>
+        <div class="mobile-tap-right" id="phoneNext"></div>
+
+        <div class="book" id="weddingBook">
+          
+          <!-- စာအုပ်အဖုံး (Cover) -->
+          <div class="page cover-page" style="z-index: 13;">
+            <div class="front" style="position: relative; width: 100%; height: 100%;">
+              <div class="spine-shadow"></div>
+              <video src="images/bookcover.mp4" autoplay muted playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;"></video>
+              <div class="cover-overlay-hint">
+                <p class="tap-hint">✨ Tap to Open ✨</p>
+              </div>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Close Book</span>
+            </div>
           </div>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Close Book</span>
-        </div>
-      </div>
 
-
-
-      <div class="page" style="z-index: 12;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid1.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">1 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>
-
-
-      <div class="page" style="z-index: 11;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid2.mp4" autoplay loop muted playsinline preload="auto"></video>
-          <span class="page-num">2 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>
-
-
-      <div class="page" style="z-index: 10;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid3.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">3 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
+          <div class="page" style="z-index: 12;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid1.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">1 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
           </div>
-      </div>
 
-      <div class="page" style="z-index: 9;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid4.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">4 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>  
-    
-      <div class="page" style="z-index: 8;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid10.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">5 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>
-    
-      <div class="page" style="z-index: 7;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid11.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">6 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>
-
-      <div class="page" style="z-index: 6;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid12.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">7 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>
-
-      <div class="page" style="z-index: 5;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid5.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">8 / 12</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>  
-      </div>
-      
-      <div class="page" style="z-index: 4;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid6.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">9 / 12 • Tap to Close</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
+          <div class="page" style="z-index: 11;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid2.mp4" autoplay loop muted playsinline preload="auto"></video>
+              <span class="page-num">2 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
           </div>
-      </div>
 
-      <div class="page" style="z-index: 3;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid7.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">10 / 12 • Tap to Close</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div> 
-      </div>
+          <div class="page" style="z-index: 10;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid3.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">3 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
 
-      <div class="page" style="z-index: 2;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid8.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">11 / 12 • Tap to Close</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
+          <div class="page" style="z-index: 9;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid4.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">4 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>  
+        
+          <div class="page" style="z-index: 8;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid10.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">5 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
+        
+          <div class="page" style="z-index: 7;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid11.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">6 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
+
+          <div class="page" style="z-index: 6;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid12.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">7 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
+
+          <div class="page" style="z-index: 5;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid5.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">8 / 12</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>  
+          </div>
+          
+          <div class="page" style="z-index: 4;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid6.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">9 / 12 • Tap to Close</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
+
+          <div class="page" style="z-index: 3;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid7.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">10 / 12 • Tap to Close</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div> 
+          </div>
+
+          <div class="page" style="z-index: 2;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid8.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">11 / 12 • Tap to Close</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
+
+          <div class="page" style="z-index: 1;">
+            <div class="front">
+              <div class="spine-shadow"></div>
+              <video src="images/vid9.mp4" muted playsinline preload="auto"></video>
+              <span class="page-num">12 / 12 • Tap to Close</span>
+            </div>
+            <div class="back">
+              <span class="back-hint">← Back</span>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <div class="page" style="z-index: 1;">
-        <div class="front">
-          <div class="spine-shadow"></div>
-          <video src="images/vid9.mp4" muted playsinline preload="auto"></video>
-          <span class="page-num">12 / 12 • Tap to Close</span>
-        </div>
-        <div class="back">
-          <span class="back-hint">← Back</span>
-        </div>
-      </div>
-
-    </div>
+    </section>
   </div>
 </section>
 
-
-
-  <script src="script.js"></script>
-
+<script src="script.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
@@ -322,7 +308,6 @@
     once: false,     
   });
 </script>
-
 
 </body>
 

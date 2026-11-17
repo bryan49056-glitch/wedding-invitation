@@ -4,17 +4,11 @@ const totalSlides = slides.length;
 
 function nextSlide() {
   slides[currentSlide].classList.remove('active');
-  
- 
   currentSlide = (currentSlide + 1) % totalSlides;
-  
-  
   slides[currentSlide].classList.add('active');
 }
 
-
 setInterval(nextSlide, 3000);
-
 
 const weddingDate = new Date("December 21, 2026 00:00:00").getTime();
 
@@ -27,12 +21,10 @@ const countdownFunction = setInterval(function() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-
   document.getElementById("days").innerHTML = days;
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("mins").innerHTML = minutes;
   document.getElementById("secs").innerHTML = seconds;
-
 
   if (distance < 0) {
     clearInterval(countdownFunction);
@@ -76,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         currentPage++;
 
-
         if (currentPage < pages.length) {
           const nextVid = pages[currentPage].querySelector("video");
           if (nextVid) {
@@ -84,18 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
             nextVid.play();
           }
         } else {
-
           resetBook();
         }
       }
     });
 
-
     back.addEventListener("click", (e) => {
       e.stopPropagation();
 
       if (currentPage === index + 1) {
-
         if (currentPage < pages.length) {
           const currVid = pages[currentPage].querySelector("video");
           if (currVid) currVid.pause();
@@ -106,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
         targetPage.classList.remove("flipped");
         targetPage.style.zIndex = pages.length - currentPage + 1;
 
-
         const targetVid = targetPage.querySelector("video");
         if (targetVid) {
           targetVid.currentTime = 0;
@@ -115,7 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
 
   function resetBook() {
     pages.forEach((p, i) => {
@@ -136,21 +122,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
+// RSVP Form Submission Handler
 document.addEventListener("DOMContentLoaded", () => {
-  const rsvpForm = document.querySelector(".rsvp-form"); 
+  const rsvpForm = document.getElementById("rsvpForm"); 
   
   if (rsvpForm) {
     rsvpForm.addEventListener("submit", function(e) {
       e.preventDefault();
       
       const formData = {
-        name: document.getElementById("guestName").value,  
-        attendance: document.getElementById("attendanceStatus").value,
-        guests: document.getElementById("guestCount").value
+        name: document.getElementById("name").value,  
+        attendance: document.getElementById("attending").value,
+        guests: document.getElementById("guests").value
       };
       
-
       const scriptURL = "https://script.google.com/macros/s/AKfycbzwGxc-FRFlE_FhD0FY7TEdfXnJOsyzmGhQ8UzKfyxsb3sPpt3CdqmblxdqN0AqqsHP9A/exec";
       
       fetch(scriptURL, {
