@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPage = 0;
 
   pages.forEach((page, index) => {
-    const front = page.querySelector(".front");
-    const back = page.querySelector(".back");
-
-    front.addEventListener("click", (e) => {
+    // မျက်နှာပြင်တစ်ခုလုံး (page တစ်ခုလုံး) ကို နှိပ်ရုံနဲ့ လှန်နိုင်စေရန် (Mobile နှင့် Laptop နှစ်ခုစလုံးအတွက် အဆင်ပြေသည်)
+    page.addEventListener("click", (e) => {
       e.stopPropagation();
-      if (currentPage === index) {
+
+      // ရှေ့စာမျက်နှာကို နှိပ်လျှင် နောက်သို့လှန်ရန်
+      if (currentPage === index && !page.classList.contains("flipped")) {
         page.classList.add("flipped");
         page.style.zIndex = index + 1;
 
@@ -77,24 +77,19 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           resetBook();
         }
-      }
-    });
-
-    back.addEventListener("click", (e) => {
-      e.stopPropagation();
-
-      if (currentPage === index + 1) {
+      } 
+      // နောက်ပြန်လှန်လိုပါက page ရဲ့ ဘယ်ဘက်ခြမ်းကို နှိပ်ခြင်း (သို့မဟုတ် flipped ဖြစ်နေသော စာမျက်နှာကို နှိပ်ခြင်း)
+      else if (currentPage === index + 1 && page.classList.contains("flipped")) {
         if (currentPage < pages.length) {
           const currVid = pages[currentPage].querySelector("video");
           if (currVid) currVid.pause();
         }
 
         currentPage--;
-        const targetPage = pages[currentPage];
-        targetPage.classList.remove("flipped");
-        targetPage.style.zIndex = pages.length - currentPage + 1;
+        page.classList.remove("flipped");
+        page.style.zIndex = pages.length - index + 1;
 
-        const targetVid = targetPage.querySelector("video");
+        const targetVid = page.querySelector("video");
         if (targetVid) {
           targetVid.currentTime = 0;
           targetVid.play();

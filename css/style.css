@@ -300,11 +300,13 @@ img.site-logo {
 
 .book {
   position: relative;
-  width: 95vw;       
-  max-width: 440px;     
+  width: 100%;
+  max-width: 380px;    
   aspect-ratio: 4 / 5;  
   cursor: pointer;
+  margin: 0 auto;
 }
+
 
 /* ဖုန်းစခရင်များအတွက် Tap Zones များကို CSS တွင် တိုက်ရိုက်ထည့်သွင်းခြင်း */
 @media screen and (max-width: 768px) {
