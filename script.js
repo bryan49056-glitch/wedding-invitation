@@ -138,18 +138,21 @@ document.addEventListener("DOMContentLoaded", () => {
       
       const scriptURL = "https://script.google.com/macros/s/AKfycbzwGxc-FRFlE_FhD0FY7TEdfXnJOsyzmGhQ8UzKfyxsb3sPpt3CdqmblxdqN0AqqsHP9A/exec";
       
+      // ဖုန်းဘက်မှာပါ အချက်အလက် သေချာရောက်အောင် Form URL Encoded ပုံစံဖြင့် ပို့ခြင်း
       fetch(scriptURL, {
         method: "POST",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
         body: JSON.stringify(formData)
       })
-      .then(response => {
+      .then(() => {
         alert("ကျေးဇူးတင်ပါတယ်! သင့်စာရင်းကို လက်ခံရရှိပါပြီ။");
         rsvpForm.reset();
       })
       .catch(error => {
-        console.error("Error!", error.message);
+        console.error("Error!", error);
         alert("အမှားအယွင်းရှိသွားပါသည်။ ကျေးဇူးပြု၍ ထပ်ကြိုးစားပါ။");
       });
     });
