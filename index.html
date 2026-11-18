@@ -29,6 +29,13 @@
         setTimeout(() => {
             intro.style.display = 'none';
             document.body.style.overflow = 'auto'; 
+            
+            const homeElement = document.getElementById('home');
+            if (homeElement) {
+                homeElement.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                window.scrollTo(0, 0);
+            }
         }, 600);
     }
     document.body.style.overflow = 'hidden';
